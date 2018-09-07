@@ -6,7 +6,7 @@ class Student
   attr_accessor :name, :grade
   attr_reader :id
 
-  def initialize(name, grade)
+  def initialize(row)
     @name = name
     @grade = grade
   end
