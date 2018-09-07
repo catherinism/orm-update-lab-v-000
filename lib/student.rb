@@ -44,10 +44,10 @@ class Student
 end
 
   def self.create(name:, grade:)
-    binding.pry
     student = self.new
     student.save
     student
+    binding.pry
   end
 
   def self.new_from_db(row)
