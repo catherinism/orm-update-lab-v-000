@@ -61,7 +61,7 @@ end
     sql =  <<-SQL
     SELECT * FROM students WHERE name = ?
         SQL
-        DB[:conn].execute(sql, name)
+        DB[:conn].execute(sql, self.name)
   end
 
   def update
