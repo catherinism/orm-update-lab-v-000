@@ -7,6 +7,7 @@ class Student
   attr_reader :id
 
   def initialize(id=nil, name, grade)
+    binding.pry
     @id = id
     @name = name
     @grade = grade
@@ -44,7 +45,6 @@ class Student
 end
 
   def self.create(name:, grade:)
-    binding.pry
     student = self.new
     student.save
     student
