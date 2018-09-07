@@ -47,7 +47,7 @@ end
     student = self.new
     student.save
     student
-    binding.pry
+    DB[:conn].execute(sql, self.name, self.grade)
   end
 
   def self.new_from_db(row)
